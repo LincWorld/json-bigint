@@ -17,7 +17,9 @@
   },
   "scripts": {
 	 "build": "rimraf dist && tsc",
-	 "publish": "npm publish && npm publish --\"@lincworld:registry=https://registry.npmjs.org\" --access=public"
+	 "publish_npm": "npm publish --\"@lincworld:registry=https://registry.npmjs.org\" --access=public",
+	 "publish_github": "npm publish",
+	 "publish_all": "npm run publish_github && npm run publish_npm"
   },
   "eslintConfig": {
     "extends": "@lincworld",
