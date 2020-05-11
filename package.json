@@ -1,5 +1,5 @@
 {
-  "name": "@linc.world/json-bigint",
+  "name": "@lincworld/json-bigint",
   "version": "1.0.1",
   "description": "JSON parser that exclusively uses BigInt",
   "main": "dist/index.js",
@@ -7,19 +7,16 @@
     "lossless-json": "^1.0.3"
   },
   "devDependencies": {
-    "@linc.world/eslint-config": "^0.0.5",
+    "@lincworld/eslint-config": "^0.0.5",
     "@types/node": "^12.7.2",
     "rimraf": "^3.0.0",
     "typescript": "^3.5.3"
   },
   "publishConfig": {
-    "registry":"https://lnpm.linc.world/"
+    "registry":"https://npm.pkg.github.com/"
   },
   "scripts": {
 	 "build": "rimraf dist && tsc",
-	 "publish_npm": "npm publish --\"@linc.world:registry=https://registry.npmjs.org\" --access=public",
-	 "publish_lnpm": "npm publish",
-	 "publish_all": "npm run publish_lnpm && npm run publish_npm"
   },
   "eslintConfig": {
     "extends": "@lincworld",
@@ -29,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/linc.world/json-bigint.git"
+    "url": "git+https://github.com/LincWorld/json-bigint.git"
   },
   "author": "Brahma Dev",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/linc.world/json-bigint/issues"
+    "url": "https://github.com/LincWorld/json-bigint/issues"
   },
-  "homepage": "https://gitlab.com/linc.world/json-bigint#readme"
+  "homepage": "https://github.com/LincWorld/json-bigint#readme"
 }
